@@ -6,12 +6,15 @@
 body {
   background: turquoise;
 }
-.wrapper {
-  background: #fff;
+.wrapper,
+.result-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.wrapper {
+  background: #fff;
   width: 550px;
   height: 500px;
   padding: 20px;
@@ -151,10 +154,6 @@ footer .next-btn:hover {
   background: #2fcaba;
 }
 .result-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: #fff;
   height: 300px;
   width: 300px;
@@ -165,6 +164,8 @@ footer .next-btn:hover {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
 }
 .result-box .icon {
   font-size: 100px;
@@ -186,9 +187,17 @@ footer .next-btn:hover {
 }
 .result-box .btns button {
   height: 40px;
-  padding: 5px 8px;
+  width: 75px;
+  padding: 4px 8px;
   color: white;
   background: turquoise;
   border: none;
   outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btns button:hover {
+  background: #2fcaba;
 }
