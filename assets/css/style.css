@@ -150,3 +150,45 @@ footer .next-btn {
 footer .next-btn:hover {
   background: #2fcaba;
 }
+.result-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 300px;
+  width: 300px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.result-box .icon {
+  font-size: 100px;
+  color: turquoise;
+  margin-bottom: 10px;
+}
+.result-box .winning-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.result-box .winning-score span {
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+}
+.result-box .winning-score span p {
+  font-weight: 900;
+  padding: 0 4px;
+}
+.result-box .btns button {
+  height: 40px;
+  padding: 5px 8px;
+  color: white;
+  background: turquoise;
+  border: none;
+  outline: none;
+}
