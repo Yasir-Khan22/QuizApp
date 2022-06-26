@@ -13,9 +13,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 550px;
-  height: 400px;
+  height: 500px;
   padding: 20px;
   border-radius: 10px;
+}
+.wrapper header span {
+  background: turquoise;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
 }
 header {
   position: relative;
@@ -38,7 +44,7 @@ header .timer {
   justify-content: space-between;
   width: 160px;
   height: 50px;
-  background: #ccefcc;
+  background: turquoise;
   border-radius: 5px;
   padding: 0 12px;
   user-select: none;
@@ -75,9 +81,56 @@ section .options-list .option {
   padding: 8px 15px;
   background: aliceblue;
   border: 2px solid turquoise;
+  font-size: 20px;
   display: flex;
   margin-bottom: 10px;
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+section .options-list .option:hover {
+  background: turquoise;
+  color: #fff;
+  border-color: #b8daff;
+}
+section .options-list .option .icon {
+  height: 25px;
+  width: 25px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+section .options-list .option:last-child {
+  margin-bottom: 0px;
+}
+section .options-list .option .tick {
+  border-color: limegreen;
+  background: lightgreen;
+  color: limegreen;
+}
+section .options-list .option .cross {
+  border-color: lightsalmon;
+  background-color: lightsalmon;
+  color: darkred;
+}
+
+.wrapper footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.wrapper footer .total-questions span {
+  display: flex;
+  font-size: 1.25rem;
+}
+.wrapper footer .total-questions span p {
+  font-weight: 800;
+  padding: 0 5px;
 }
