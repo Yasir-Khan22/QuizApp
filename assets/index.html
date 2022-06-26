@@ -9,14 +9,55 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <header>Quiz Application</header>
+      <!-- Quiz header  -->
+      <header>
         <div class="info">
           <span class="Q-Numbers"></span>
-          <div class="questions">What does the HTML stands for:</div>
+          <div class="timer">
+            <div class="time-text">Time</div>
+            <div class="time-sec">15</div>
+          </div>
         </div>
-      </div>
+      </header>
+      <!-- Quiz box -->
+      <section>
+        <div class="question">
+          <span>What does the word HTML stands for:</span>
+        </div>
+        <div class="options-list">
+          <div class="option">
+            <input type="checkbox" value="" />
+            <label>HyperText Markup language </label>
+            <div class="icon">
+              <ion-icon class="tick" name="checkmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="option">
+            <input type="checkbox" value="" />
+            <label>HyperText proprocessor language </label>
+            <div class="icon">
+              <ion-icon class="cross" name="close-circle-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="option">
+            <input type="checkbox" value="" />
+            <label>Hyper Transfer proprocessor language </label>
+          </div>
+          <div class="option">
+            <input type="checkbox" value="" />
+            <label>HyperText Markover language </label>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <!-- <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script> -->
   <script src="js/script.js" defer></script>
 </html>
