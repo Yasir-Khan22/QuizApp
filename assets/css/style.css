@@ -63,3 +63,21 @@ header .timer .time-sec {
   padding: 20px 30px 20px 30px;
   background: #fff;
 }
+.wrapper section .question {
+  font-size: 1.5625rem;
+  font-weight: 600;
+}
+.wrapper section .options-list {
+  display: block;
+  padding: 20px 0;
+}
+section .options-list .option {
+  padding: 8px 15px;
+  background: aliceblue;
+  border: 2px solid turquoise;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
