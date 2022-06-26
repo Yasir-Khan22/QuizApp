@@ -16,6 +16,7 @@ body {
   height: 500px;
   padding: 20px;
   border-radius: 10px;
+  display: none;
 }
 .wrapper header span {
   background: turquoise;
@@ -133,4 +134,19 @@ section .options-list .option .cross {
 .wrapper footer .total-questions span p {
   font-weight: 800;
   padding: 0 5px;
+}
+footer .next-btn {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 13px;
+  background: turquoise;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+footer .next-btn:hover {
+  background: #2fcaba;
 }
